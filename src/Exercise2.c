@@ -57,7 +57,7 @@ int i,j,c,d,temp;
 	for ( i =0;i<m;i++){
 		for ( c=0; c<m-1;c++){
 			for ( j =0;j<n;j++){								
-					if (a[i][j]%2 ==0 && a[i][j] < a[c][j]){	
+					if (a[i][j]%2 ==0 && a[i][j] > a[c][j]){	
 					 temp= a[i][j];
 					a[i][j]=a[c][j] ;
 					a[c][j] =temp;
@@ -70,7 +70,7 @@ int i,j,c,d,temp;
 	for ( i =0;i<m;i++){
 		for ( c=0; c<m-1;c++){
 			for ( j =0;j<n;j++){								
-					if (a[i][j]%2 !=0 && a[i][j] > a[c][j]){	
+					if (a[i][j]%2 !=0 && a[i][j] < a[c][j]){	
 					 temp= a[i][j];
 					a[i][j]=a[c][j] ;
 					a[c][j] =temp;
